@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DaisyUI</title>
+    <title>Bike</title>
     <!-- TailWind DaisyUI  -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css"
@@ -66,12 +66,14 @@
               </label>
               <ul
                 tabindex="0"
-                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 space-y-5 text-center"
               >
-                <li><a>Home</a></li>
-                <li><a>Shop</a></li>
-                <li><a>News</a></li>
-                <li><a>Contact</a></li>
+                <li>
+                  <a class="justify-center">Home</a>
+                </li>
+                <li><a class="justify-center">Shop</a></li>
+                <li><a class="justify-center">News</a></li>
+                <li><a class="justify-center">Contact</a></li>
               </ul>
             </div>
             <a class="btn btn-ghost normal-case text-xl">Bike Dekho</a>
@@ -215,7 +217,32 @@
       <!-- Slider End  -->
       <!------------------------------------------------------------------->
     </header>
-    <main></main>
+    <main class="container mx-auto">
+      <!-- Featured Section  -->
+      <section class="my-32">
+        <h1 class="text-center text-5xl">Fetured Bikes In This Year</h1>
+        <p
+          class="text-center text-[#E76F51] text-sm mt-2 relative after:absolute after:block after:w-20 after:h-[1px] after:bg-main after:bottom-0 after:left-[50%]"
+        >
+          Best bike collection
+        </p>
+        <div
+          class="container mx-auto mt-7 flex justify-around items-center flex-col gap-8 lg:flex-row"
+        >
+          <div class="w-64">
+            <img class="" src="./images/others/feature-bike-bg-2.png" alt="" />
+          </div>
+          <div class="w-64">
+            <img class="" src="./images/others/feature-bike-bg-1.png" alt="" />
+          </div>
+          <div class="w-64">
+            <img class="" src="./images/others/feature-bike-bg-2.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <!-- Featured Section End  -->
+      <!------------------------------------------------------------------->
+    </main>
     <footer></footer>
   </body>
 </html>
